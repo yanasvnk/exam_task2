@@ -9,4 +9,14 @@ public class DailyTask extends Task implements Repeatable{
     public boolean checkOccurrence(LocalDateTime requestedDate) {
         return getFirstDate().toLocalDate().equals(requestedDate.toLocalDate());
     }
+
+    @Override
+    public void setTaskType(String taskType) {
+
+    }
+
+    @Override
+    public void setEventDate(String eventDate) {
+
+    }
 }

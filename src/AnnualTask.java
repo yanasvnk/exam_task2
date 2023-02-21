@@ -9,4 +9,14 @@ public class AnnualTask extends Task implements Repeatable{
     public boolean checkOccurrence(LocalDateTime requestedDate) {
         return getFirstDate().getYear()==requestedDate.getYear();
     }
+
+    @Override
+    public void setTaskType(String taskType) {
+
+    }
+
+    @Override
+    public void setEventDate(String eventDate) {
+
+    }
 }

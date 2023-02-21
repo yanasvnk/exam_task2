@@ -9,4 +9,14 @@ public class MonthlyTask extends Task implements Repeatable{
     public boolean checkOccurrence(LocalDateTime requestedDate) {
         return getFirstDate().getMonth().equals(requestedDate.getMonth());
     }
+
+    @Override
+    public void setTaskType(String taskType) {
+
+    }
+
+    @Override
+    public void setEventDate(String eventDate) {
+
+    }
 }

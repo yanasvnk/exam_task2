@@ -71,21 +71,21 @@ public class MyCalendar {
                     System.out.println("Введите описание задачи: ");
                     String description = scanner.nextLine();
                     Repeatable task = actualTasks.get(id);
-                    task.setTitle(description);
+                    task.setDescription(description);
                 }
                 case 2 -> {
                     scanner.nextLine();
                     System.out.println("Введите тип задачи: ");
                     String taskType = scanner.nextLine();
                     Repeatable task = actualTasks.get(id);
-                    task.setTitle(taskType);
+                    task.setTaskType(taskType);
                 }
                 case 3 -> {
                     scanner.nextLine();
                     System.out.println("Введите дату задачи: ");
                     String eventDate = scanner.nextLine();
                     Repeatable task = actualTasks.get(id);
-                    task.setTitle(eventDate);
+                    task.setEventDate(eventDate);
                 }
 
             }
